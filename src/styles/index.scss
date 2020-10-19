@@ -1,15 +1,18 @@
+@import './flex.scss';
 @import './variables.scss';
 @import './mixin.scss';
 @import './transition.scss';
 @import './element-ui.scss';
 @import './sidebar.scss';
+@import './helper.scss';
 
 body {
   height: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+  font-family: PingFang SC, Verdana, Helvetica Neue, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
+  background-color: $pageBg;
 }
 
 label {
@@ -62,4 +65,18 @@ div:focus {
 // main-container global css
 .app-container {
   padding: 20px;
+}
+.app-main {
+  /*50 = navbar  */
+  min-height: calc(100vh - 50px);
+  min-width: $containerMinWidth;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.navbar {
+  min-width: $containerMinWidth;
+}
+.page-main-card {
+  padding: 30px 24px;
 }

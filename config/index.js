@@ -5,8 +5,8 @@
 const path = require('path')
 
 module.exports = {
+  BASE_URL: 'http://161.189.42.127',
   dev: {
-
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
@@ -14,7 +14,11 @@ module.exports = {
       '/vue-admin-template': {
         target: 'http://localhost:3000',
         changeOrigin: true
-      }
+      },
+      '/api': {
+        target: 'http://localhost:3000',
+        changeOrigin: true
+      },
     },
 
     // Various Dev Server settings
